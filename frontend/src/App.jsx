@@ -34,7 +34,7 @@ function App() {
     setLoading(true)
     setResult('')
     try {
-      const response = await fetch('http://127.0.0.1:5000/decode', {
+      const response = await fetch('https://error-decoder-backend.onrender.com/decode', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ error_text: errorText })
